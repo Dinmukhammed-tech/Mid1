@@ -1,0 +1,68 @@
+h2{
+    display: flex;
+    justify-content: center;
+}
+.education_timeline ul li:nth-child(even){
+    background-color: cornflowerblue;
+}
+.education_timeline ul li:nth-child(odd){
+    background-color: rgb(42, 97, 165);
+}
+.education_timeline ul li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    padding: 10px 0; 
+    font-size: 18px;
+}
+.education_timeline ul{
+    list-style: none; 
+    padding: 0;
+}
+.sdu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sdu img {
+    max-width: 50%;
+    height: auto; 
+}
+.hackton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-image: linear-gradient(180deg,blue,rgb(157, 0, 255));
+    margin-top:20px;
+}
+.hackton img {
+    max-width: 50%;
+    max-height: 25%; 
+}
+
+@media (max-width: 768px) {
+    
+
+    .education_wrapper {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .sdu, .hackton {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .sdu img, .hackton img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .hackton {
+        text-align: center;
+        gap: 10px; 
+    }
+
+    
+}

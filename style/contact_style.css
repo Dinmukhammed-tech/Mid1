@@ -1,0 +1,91 @@
+.contact_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1160px;
+    width: 100%;
+}
+
+.par {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.get_in_touch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.get_in_touch img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.send_data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.send_data input,
+.send_data textarea {
+    width: 500px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid #8e44ad; 
+    border-radius: 5px; 
+    transition: border-color 0.3s ease; 
+    resize: none;
+}
+
+.send_data input:focus,
+.send_data textarea:focus {
+    border-color: #3498db; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+}
+
+.styled-button {
+    width: 500px; 
+    padding: 10px; 
+    font-size: 16px; 
+    background-color: #1abc9c; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.styled-button:last-child{
+    width:520px;
+}
+.styled-button:hover {
+    background-color: #16a085; 
+}
+@media(max-width:768px){
+    .get_in_touch{
+        flex-direction: column;
+    }
+    .get_in_touch img{
+        width: 50%;
+    }
+    .get_in_touch input{
+        width:50%;
+    }
+    .contact_wrapper{
+        margin:0 auto;
+        padding: 0 20px;
+    }
+    .send_data input,
+    .send_data textarea {
+        width: 80%;
+        
+    }
+    .styled-button{
+        width:90%;
+    }
+}
